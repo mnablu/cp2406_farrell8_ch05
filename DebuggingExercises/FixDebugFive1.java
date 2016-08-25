@@ -19,7 +19,7 @@ public class FixDebugFive1
          "\n3 - Grilled cheese\n4 - Fish sandwich");
       usersChoice= Integer.parseInt(usersChoiceString);
       if(usersChoice == 1 ||usersChoice == 2) {
-         bill = bill + LOW_PRICE;
+         bill = bill + HIGH_PRICE;
       }
       else {
          bill = bill + MED_PRICE;
@@ -30,6 +30,6 @@ public class FixDebugFive1
       if (usersChoice == 1) {
          bill = bill + LOW_PRICE;
       }
-      JOptionPane.showMessageDialog(null,"Bill is " + bill);
+      JOptionPane.showMessageDialog(null,"Bill is $" + bill);
    }
 }
